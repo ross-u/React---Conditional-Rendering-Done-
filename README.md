@@ -1,6 +1,8 @@
 # React | Conditional Rendering - Lecture Code
 
 
+### Additional Resources
+
 #### [React - conditional rendering](https://reactjs.org/docs/conditional-rendering.html)
 
 <br>
