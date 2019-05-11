@@ -24,19 +24,22 @@ class DynamicMovieList extends Component {
   render() {
     return (
       <div>
-        <button className='btn' onClick={this.toggleMovies}>Toggle Movies</button>
-        {
-        this.state.showMovies ? 
+        <button className='btn' onClick={this.toggleMovies}>
+          Toggle Movies
+        </button>
+
         <ul>
-          { 
-            this.state.movies.map( (oneMovie, index) => {
-              return (<ImprovedCard key={index} {...oneMovie} clickToDelete={ ()=> this.deleteMovie(index)} />) 
-            })
-          }
-        </ul>
-        :
-        null
+
+        {
+          this.state.showMovies ? 
+          this.state.movies.map( (oneMovie, index) => {
+            return <ImprovedCard key={index} {...oneMovie} clickToDelete={ ()=> this.deleteMovie(index)} />
+          })
+          :
+          null
         }
+        
+        </ul>
       </div>
     )
   }
