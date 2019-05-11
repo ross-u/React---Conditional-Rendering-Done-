@@ -16,13 +16,13 @@ const conditionalExample = (props) => {
   return (
     <div>
       {
-        renderConditionaly(props)
-        
-        // OR with ternary operator:      checkTruthyOrFalsy  ?  returnThisIfTrue  :  returnThisIfFalse 
-        //props.title ? 
-        //<h2>Ternary - TRUE  <br/> props.title = {props.title}</h2> 
-        //: 
-        //<h2>Ternary - FALSE <br/> props.title = {props.title}</h2> 
+        //  renderConditionaly(props)
+        // OR with ternary operator:        checkTruthyOrFalsy  ?  returnThisIfTrue  :  returnThisIfFalse 
+
+        props.title ? 
+        <h2>Ternary - TRUE  <br/> props.title = {props.title}</h2> 
+        : 
+        <h2>Ternary - FALSE <br/> props.title = {props.title}</h2> 
       }
 
     </div>
